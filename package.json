@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node yield-alert-bot.js"
+    "setup": "node ./deployCommands/deploy-commands.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,9 +14,11 @@
     "@discordjs/rest": "^1.1.0",
     "@frakt-protocol/frakt-sdk": "^0.7.8",
     "@solana/web3.js": "^1.56.2",
+    "axios": "^0.27.2",
     "discord.js": "^14.3.0",
-    "dotenv": "^16.0.0",
-    "node-font2base64": "^0.7.1",
-    "node-html-to-image": "^3.2.4"
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18"
   }
 }
