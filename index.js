@@ -4,7 +4,7 @@ import {
   client,
   createEmbed,
 } from "./discord/index.js";
-import {maxValues} from "./helpers/index.js";
+import { maxValues } from "./helpers/index.js";
 import * as frakt from "@frakt-protocol/frakt-sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
@@ -37,9 +37,7 @@ await initDiscord();
 const main = async () => {
   try {
     // Get pool info from SDK
-    const allInfo = await axios.get(
-      "https://fraktion-monorep.herokuapp.com/stats/lending-pools"
-    );
+    const allInfo = await axios.get("http://api.frakt.xyz/stats/lending-pools");
     // Set variables for first run
     if (first) {
       allInfo.data.forEach((pool) => {
