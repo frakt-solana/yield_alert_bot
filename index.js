@@ -4,7 +4,7 @@ import {
   client,
   createEmbed,
 } from "./discord/index.js";
-import { collectionsID, collectionsURL, maxValues } from "./helpers/index.js";
+import {maxValues} from "./helpers/index.js";
 import * as frakt from "@frakt-protocol/frakt-sdk";
 import * as anchor from "@project-serum/anchor";
 import dotenv from "dotenv";
